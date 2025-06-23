@@ -22,7 +22,7 @@ npm install -D @saumya-sarma/procli
   "procli": "procli"
 }
 ```
-### step 03: Now they can run:
+### step 03: Now you can run:
 
 ```bash
 npm run procli home/[id]
