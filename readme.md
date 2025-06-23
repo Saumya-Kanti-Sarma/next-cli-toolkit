@@ -56,12 +56,12 @@ export default Page;
 Available commands: 
 | Command                              | Output                                                         |
 | ------------------------------------ | -------------------------------------------------------------- |
-| `procli your/route`                  | Generates `page.tsx` and `page.css`                            |
-| `procli your/route-no-css`           | Generates `page.tsx` only                                      |
-| `procli your/route-interface`        | Generates `page.tsx` with interface boilerplate and `page.css` |
-| `procli your/route-interface-no-css` | Generates `page.tsx` with interface only                       |
-| `procli your/route-jsx`              | Generates `page.jsx` and `page.css`                            |
-| `procli your/route-jsx-no-css`       | Generates `page.jsx` only                                      |
+| procli your/route                  | Generates page.tsx and page.css                            |
+| procli your/route-no-css           | Generates page.tsx only                                      |
+| procli your/route-interface        | Generates page.tsx with interface boilerplate and page.css |
+| procli your/route-interface-no-css | Generates page.tsx with interface only                       |
+| procli your/route-jsx              | Generates page.jsx and page.css                            |
+| procli your/route-jsx-no-css       | Generates page.jsx only                                      |
 
 
 ---
@@ -79,15 +79,14 @@ procli your/route
 
 Built with 💙 by **Saumya Sarma**
 
-* [Instagram](https://instagram.com/saumya__sarma)
-* [LinkedIn](https://www.linkedin.com/in/saumya-sarma/)
+* [Instagram](https://www.instagram.com/developer_saumya)
+* [LinkedIn](https://www.linkedin.com/in/saumya-sarma-2ab6a52a4/)
+* [X](https://x.com/devloper_saumya)
 * [GitHub](https://github.com/Saumya-Kanti-Sarma/)
 * [NPM Package](https://www.npmjs.com/package/@saumya-sarma/procli)
 * [Project Repository](https://github.com/Saumya-Kanti-Sarma/procli)
 
 ---
-
-## 📄 License
 
 **MIT License** — Free for personal and commercial use.
 
