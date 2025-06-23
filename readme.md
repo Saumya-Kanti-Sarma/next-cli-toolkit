@@ -12,7 +12,7 @@ A fast, simple, and minimal CLI tool to generate Next.js route pages with `.tsx`
 
 ## ⚙️ Usage
 
-### step 01: install the package as def depedency
+### step 01: install the package as dev depedency
 ```bash
 npm install -D @saumya-sarma/procli
 ```
