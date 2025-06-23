@@ -1,0 +1,31 @@
+{
+  "name": "@saumya-sarma/procli",
+  "version": "1.0.0",
+  "description": "CLI took for creating easy routes for Next.js ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "bin": {
+    "procli": "index.js"
+  },
+  "keywords": [
+    "nextjs",
+    "procli",
+    "cli for nextjs",
+    "nextjs cli took"
+  ],
+  "author": "Saumya Sarma",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "crypto": "^1.0.1",
+    "mongoose": "^8.15.1",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29"
+  }
+}
