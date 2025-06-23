@@ -19,12 +19,7 @@
   ],
   "author": "Saumya Sarma",
   "license": "MIT",
-  "dependencies": {
-    "axios": "^1.9.0",
-    "crypto": "^1.0.1",
-    "mongoose": "^8.15.1",
-    "nodemon": "^3.1.10"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^22.15.29"
   }
