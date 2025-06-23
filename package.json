@@ -18,7 +18,5 @@
     "nextjs cli took"
   ],
   "author": "Saumya Sarma",
-  "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "license": "MIT"
 }

@@ -12,24 +12,32 @@ A fast, simple, and minimal CLI tool to generate Next.js route pages with `.tsx`
 
 ## ⚙️ Usage
 
-### step 01: Download the package
+### step 01: install the package as def depedency
 ```bash
-npm install @saumya-sarma/procli
+npm install -D @saumya-sarma/procli
 ```
-### step 02: at the root terminal type
-```bash
-procli home/[id] 
+### step 02: In their package.json, add:
+```json
+"scripts": {
+  "procli": "procli"
+}
 ```
-### This will generate:
+### step 03: Now they can run:
 
+```bash
+npm run procli home/[id]
 ```
+
+### This will generate page.tsx and page.css at:
+
+```bash
 /src/app/home/[id]/page.tsx
 /src/app/home/[id]/page.css
 ```
 
 ---
 
-##  Generated `page.tsx` Example:
+##  The generated `page.tsx` will look like this:
 
 ```tsx
 "use client";
@@ -57,7 +65,16 @@ Available commands:
 
 
 ---
+## Additionally you can download it globally:
 
+```bash
+npm install -g @saumya-sarma/procli
+```
+and you can use procli in any directory. Just use the command:
+```bash
+procli your/route
+```
+---
 ## 👨‍💻 Author
 
 Built with 💙 by **Saumya Sarma**
