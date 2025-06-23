@@ -20,7 +20,5 @@
   "author": "Saumya Sarma",
   "license": "MIT",
   "dependencies": {},
-  "devDependencies": {
-    "@types/node": "^22.15.29"
-  }
+  "devDependencies": {}
 }
