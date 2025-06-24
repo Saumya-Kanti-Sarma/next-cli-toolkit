@@ -46,6 +46,7 @@ import "./page.css"
 const Page = () => {
   return (
     <>
+    this is home/[id]
     </>
   );
 };
