@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start:dev": "nodemon test/index.js"
   },
   "bin": {
     "procli": "index.js"
@@ -18,5 +18,8 @@
     "nextjs cli tool"
   ],
   "author": "Saumya Sarma",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
