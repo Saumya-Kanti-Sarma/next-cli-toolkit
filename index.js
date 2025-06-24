@@ -1,19 +1,19 @@
 #!/usr/bin/env node
 import fs from "fs"
 import path from "path";
-import Templates from "./templates.js"
+import { Page_Template } from "./templates/pages/Page.js";
 const input = process.argv[2]
 
 if (!input) {
   console.log(
     `
 Commands:
-  route                 → Create page.tsx + page.css
-  route-no-css          → Create page.tsx only
-  route-interface       → page.tsx with interface + page.css
-  route-interface-no-css → page.tsx with interface only
-  route-jsx             → Create page.jsx + page.css
-  route-jsx-no-css      → Create page.jsx only
+  procli <route>                   → Create page.tsx + page.css
+  procli <route>-no-css            → Create page.tsx only
+  procli <route>-interface         → page.tsx with interface + page.css
+  procli <route>-interface-no-css  → page.tsx with interface only
+  procli <route>-jsx               → Create page.jsx + page.css
+  procli <route>-jsx-no-css        → Create page.jsx only
 
 Examples:
   procli home/about                → Create page.tsx + page.css at src/app/home/about
@@ -57,36 +57,36 @@ fs.mkdirSync(dir, { recursive: true })
 
 // TSX commands:
 if (input && input.includes("-interface-") && input.includes("-no-css")) {
-  fs.writeFileSync(path.join(dir, "page.tsx"), Templates.interfaceTSX);
+  fs.writeFileSync(path.join(dir, "page.tsx"), Page_Template(baseInput, false, true));
   fs.writeFileSync(path.join(dir, "page.css"), "");
   console.log("created page.tsx and page.css at ", baseInput);
 }
 //JSX commands:
 else if (input && input.includes("-jsx-no-css")) {
-  fs.writeFileSync(path.join(dir, "page.jsx"), Templates.plainNoCss);
+  fs.writeFileSync(path.join(dir, "page.jsx"), Page_Template(baseInput, false, false));
   console.log("created page.tsx at ", baseInput);
 }
 
 // TSX commands:
 else if (input && input.includes("-no-css")) {
-  fs.writeFileSync(path.join(dir, "page.tsx"), Templates.plainNoCss);
+  fs.writeFileSync(path.join(dir, "page.tsx"), Page_Template(baseInput, false, false));
   console.log("created page.tsx ", baseInput);
 }
 // TSX commands:
 else if (input && input.includes("-interface")) {
-  fs.writeFileSync(path.join(dir, "page.tsx"), Templates.interfaceTSX);
+  fs.writeFileSync(path.join(dir, "page.tsx"), Page_Template(baseInput, true, true));
   fs.writeFileSync(path.join(dir, "page.css"), "");
   console.log("created page.tsx and page.css at ", baseInput);
 }
 //JSX commands:
 else if (input && input.includes("-jsx")) {
-  fs.writeFileSync(path.join(dir, "page.jsx"), Templates.plainTSX);
+  fs.writeFileSync(path.join(dir, "page.jsx"), Page_Template(baseInput, true, false));
   fs.writeFileSync(path.join(dir, "page.css"), "");
   console.log("created page.jsx and page.css at ", baseInput);
 }
 //TSX commands:
 else {
-  fs.writeFileSync(path.join(dir, "page.tsx"), Templates.plainTSX);
+  fs.writeFileSync(path.join(dir, "page.tsx"), Page_Template(baseInput, true, false));
   fs.writeFileSync(path.join(dir, "page.css"), "");
   console.log("created page.tsx and page.css at ", baseInput);
 }
