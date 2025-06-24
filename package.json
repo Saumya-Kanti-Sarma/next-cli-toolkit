@@ -11,6 +11,10 @@
   "bin": {
     "nextcli": "index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Saumya-Kanti-Sarma/next-cli-toolkit.git"
+  },
   "keywords": [
     "nextjs",
     "CLI toolkit",
