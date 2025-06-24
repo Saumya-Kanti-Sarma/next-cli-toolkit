@@ -1,5 +1,5 @@
 {
-  "name": "@saumya-sarma/procli",
+  "name": "next-cli-toolkit",
   "version": "1.0.8",
   "description": "CLI took for creating easy routes for Next.js ",
   "main": "index.js",
@@ -13,7 +13,7 @@
   },
   "keywords": [
     "nextjs",
-    "procli",
+    "CLI toolkit",
     "cli for nextjs",
     "nextjs cli tool"
   ],
