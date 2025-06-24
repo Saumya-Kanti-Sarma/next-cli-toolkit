@@ -1,6 +1,6 @@
 {
   "name": "next-cli-toolkit",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "CLI took for creating easy routes for Next.js ",
   "main": "index.js",
   "type": "module",
