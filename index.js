@@ -7,46 +7,28 @@ const input = process.argv[2]
 if (!input) {
   console.log(
     `
-Commands:
-  procli <route>                   → Create page.tsx + page.css
-  procli <route>-no-css            → Create page.tsx only
-  procli <route>-interface         → page.tsx with interface + page.css
-  procli <route>-interface-no-css  → page.tsx with interface only
-  procli <route>-jsx               → Create page.jsx + page.css
-  procli <route>-jsx-no-css        → Create page.jsx only
+Available commands: 
+| Command                              | Output                                                         |
+| ------------------------------------ | -------------------------------------------------------------- |
+| nextcli your/route                   | Generates page.tsx and page.css                                |
+| nextcli your/route-no-css            | Generates page.tsx only                                        |
+| nextcli your/route-interface         | Generates page.tsx with interface boilerplate and page.css     |
+| nextcli your/route-interface-no-css  | Generates page.tsx with interface only                         |
+| nextcli your/route-jsx               | Generates page.jsx and page.css                                |
+| nextcli your/route-jsx-no-css        | Generates page.jsx only                                        |
 
 Examples:
-  procli home/about                → Create page.tsx + page.css at src/app/home/about
-  procli blog/[slug]               → Create page.tsx + page.css at src/app/blog/[slug]
-  procli dashboard/user-no-css     → Create page.tsx only at src/app/dashboard
-  procli post/[id]-jsx             → Create page.jsx + page.css at src/app/post/[id]
-  procli data-interface-no-css     → Create page.tsx only at src/app/data
+| Command                              | Output                                                         |
+| ------------------------------------ | -------------------------------------------------------------- |
+|  nextcli home/about                  | Create page.tsx + page.css at src/app/home/about               |
+|  nextcli blog/[slug]                 | Create page.tsx + page.css at src/app/blog/[slug]              |
+|  nextcli dashboard/user-no-css       | Create page.tsx only at src/app/dashboard                      |
+|  nextcli post/[id]-jsx               | Create page.jsx + page.css at src/app/post/[id]                |
+|  nextcli data-interface-no-css       | Create page.tsx only at src/app/data                           |
 
-Notes:
-  - This works with App Router structure (Next.js 13+)
-  - Make sure /src/app/ exists in your project
+For more information go to https://www.npmjs.com/package/next-cli-toolkit
 
-Use globally:
-  npm install -g @saumya-sarma/procli
-  procli blog/[slug]
-
-Use locally:
-  npm install -D @saumya-sarma/procli
-  create run script at package.json
-  npm run procli blog/[slug]
-
-For more information go to https://www.npmjs.com/package/@saumya-sarma/procli
-
-Made by: Saumya Sarma
-    instagram: https://www.instagram.com/developer_saumya
-    linkedin: https://www.linkedin.com/in/saumya-sarma-2ab6a52a4/
-    X: https://x.com/devloper_saumya
-    github: https://github.com/Saumya-Kanti-Sarma/
-
-
-
-
-project repository: https://github.com/Saumya-Kanti-Sarma/procli
+Made by: Saumya Sarma https://www.linkedin.com/in/saumya-sarma-2ab6a52a4/
 `);
 
   process.exit(1)
