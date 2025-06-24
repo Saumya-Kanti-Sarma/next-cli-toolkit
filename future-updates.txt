@@ -1,0 +1,15 @@
+1. API routes:
+  -procli <route> --api
+    this will create a route.ts file
+
+  -procli <route> --api-js
+    this will create a route.js file
+
+
+2. Make it compatable for components also:
+  - procli <route> --cp
+    eg: procli navbar --cp:
+      this will create /components/navbar/Navbar.tsx and Navbar.css 
+  - procli <route> --cp-js
+    eg: procli navbar --cp:
+      this will create /components/navbar/Navbar.jsx and Navbar.css 
