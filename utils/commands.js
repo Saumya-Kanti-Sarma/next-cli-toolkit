@@ -9,6 +9,8 @@ export default function commands() {
 | nextcli your/route-interface-no-css  | Generates page.tsx with interface only                         |
 | nextcli your/route-jsx               | Generates page.jsx and page.css                                |
 | nextcli your/route-jsx-no-css        | Generates page.jsx only                                        |
+|                 new                  |                                                                |
+| nextcli <componentName>-comp         | Generates Component.jsx and Component.css at src/components    |
 
 Examples:
 | Command                              | Output                                                         |
@@ -18,6 +20,8 @@ Examples:
 |  nextcli dashboard/user-no-css       | Create page.tsx only at src/app/dashboard                      |
 |  nextcli post/[id]-jsx               | Create page.jsx + page.css at src/app/post/[id]                |
 |  nextcli data-interface-no-css       | Create page.tsx only at src/app/data                           |
+|                 new                  |                                                                |
+| nextcli navbar-comp                  | Generates Navbar.jsx and Navbar.css at src/Components/Navbar   |
 
 For more information go to https://www.npmjs.com/package/next-cli-toolkit
 

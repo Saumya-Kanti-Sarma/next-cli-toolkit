@@ -1,6 +1,6 @@
 # Next-cli-toolkit — Next.js Page Generator
 
-A fast, simple, and minimal CLI tool to generate Next.js route pages with `.tsx`, `.jsx` and `.css` files in one command — just like NestJS generators!
+A fast and minimal CLI tool to generate Next.js routes and components with `.tsx`, `.jsx` and `.css` files in one command — (inspired from nest-cli)
 
 ## Features
 
@@ -8,6 +8,7 @@ A fast, simple, and minimal CLI tool to generate Next.js route pages with `.tsx`
 - ✅ Generates `page.tsx`, `page.jsx` and `page.css` files
 - ✅ Comes with boilerplate code
 - ✅ Perfect for Next.js 13+ with App Router projects
+- ✅ supports component templates too (version ^1.0.11)
 
 
 ## ⚙️ Usage
@@ -57,12 +58,14 @@ export default Page;
 Available commands: 
 | Command                              | Output                                                         |
 | ------------------------------------ | -------------------------------------------------------------- |
-| nextcli your/route                  | Generates page.tsx and page.css                            |
-| nextcli your/route-no-css           | Generates page.tsx only                                      |
-| nextcli your/route-interface        | Generates page.tsx with interface boilerplate and page.css |
-| nextcli your/route-interface-no-css | Generates page.tsx with interface only                       |
-| nextcli your/route-jsx              | Generates page.jsx and page.css                            |
-| nextcli your/route-jsx-no-css       | Generates page.jsx only                                      |
+| nextcli your/route                   | Generates page.tsx and page.css                                |
+| nextcli your/route-no-css            | Generates page.tsx only                                        |
+| nextcli your/route-interface         | Generates page.tsx with interface boilerplate and page.css     |
+| nextcli your/route-interface-no-css  | Generates page.tsx with interface only                         |
+| nextcli your/route-jsx               | Generates page.jsx and page.css                                |
+| nextcli your/route-jsx-no-css        | Generates page.jsx only                                        |
+|                 new                  |                                                                |
+| nextcli componentName-comp           | Generates Component.jsx and Component.css at src/components    |
 
 
 ---
