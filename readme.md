@@ -2,6 +2,13 @@
 
 A fast and minimal CLI tool to generate Next.js routes and components with `.tsx`, `.jsx` and `.css` files in one command — (inspired from nest-cli)
 
+## Watch Tutorial on Youtube
+<a href="https://youtu.be/67jj4TNGfgc?si=proZ_uDOOZbVPD-w">
+<img src="https://azjgnoxfyygbnquzecyw.supabase.co/storage/v1/object/public/npm-packages//WhatsApp%20Image%202025-06-28%20at%2018.48.59_1dbdbaa4.jpg" style="width: 300px">
+<h3 style="textAlign:start; color:#fff; ">How to use next-cli-toolkit in your Next app | next cli toolkit tutorial | Developer Saumya</h3>
+</a>
+
+
 ## Features
 
 - ✅ Instantly create route folders like `user/[id]`
