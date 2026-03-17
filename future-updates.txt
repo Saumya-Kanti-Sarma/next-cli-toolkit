@@ -13,3 +13,7 @@
   - nextcli <route> --cp-js
     eg: nextcli navbar --cp:
       this will create /components/navbar/Navbar.jsx and Navbar.css 
+
+3. check if the codebase is using js or ts automatically and generate file accordingly (.jsx or .tsx)
+4. check if the codebase is using tailwind or not. if not then no need for .css file
+5. 
